@@ -35,6 +35,29 @@ namespace MVVMLightDemo.Common
 			}
 		}
 
+		public ICommand RefreshTodoItemsCommand
+		{
+			get{
+				return new MvxCommand (() => {
+					IsBusy = true;
+					TodoItems.Add (new TodoItem { Name = "Pull to refresh item", Description = "Demo item"});
+					IsBusy = false;
+				});
+			}
+		}
+
+		bool _isBusy;
+		public bool IsBusy
+		{
+			get { 
+				return _isBusy; 
+			}
+			set {
+				_isBusy = value;
+				RaisePropertyChanged (nameof(IsBusy));
+			}
+		}
+
 		public ObservableCollection<TodoItem> TodoItems { get; set; }
 
 		public TodoItemsViewModel ()

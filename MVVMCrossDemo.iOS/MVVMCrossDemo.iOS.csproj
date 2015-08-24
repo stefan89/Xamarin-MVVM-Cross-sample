@@ -122,10 +122,12 @@
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="BindableUIControls\BindableUIRefreshControl.cs" />
   </ItemGroup>
   <Import Project="..\MVVMCrossDemo.Common\MVVMLightDemo.Common.projitems" Label="Shared" Condition="Exists('..\MVVMCrossDemo.Common\MVVMLightDemo.Common.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Views\" />
+    <Folder Include="BindableUIControls\" />
   </ItemGroup>
 </Project>

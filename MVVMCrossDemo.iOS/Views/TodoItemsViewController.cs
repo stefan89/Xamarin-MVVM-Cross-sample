@@ -13,6 +13,8 @@ namespace MVVMCrossDemo.iOS
 {
 	public partial class TodoItemsViewController : MvxViewController
 	{
+		BindableUIRefreshControl _refreshControl;
+
 		public new TodoItemsViewModel ViewModel {
 			get { 
 				return base.ViewModel as TodoItemsViewModel; 
@@ -32,6 +34,10 @@ namespace MVVMCrossDemo.iOS
 
 			Title = "Todo items";
 
+			_refreshControl = new BindableUIRefreshControl();
+			_refreshControl.AttributedTitle = new NSAttributedString ("Refreshing", new UIStringAttributes ());
+			tableViewTodoItems.AddSubview (_refreshControl);
+
 			//Create bindings to ViewModel
 			var source = new TableSource(tableViewTodoItems);
 			this.AddBindings(new Dictionary<object, string>
@@ -43,9 +49,16 @@ namespace MVVMCrossDemo.iOS
 			tableViewTodoItems.ReloadData();
 
 			var bindingSet = this.CreateBindingSet<TodoItemsViewController, TodoItemsViewModel> ();
+
 			bindingSet.Bind (buttonAddItem).To (vm => vm.AddNewTodoCommand);
+
 			bindingSet.Bind (buttonNavigateToSecondPage).To (vm => vm.NavigateToSecondPageCommand);
+
 			bindingSet.Bind(source).For(vm => vm.SelectionChangedCommand).To(vm => vm.SelectTodoItemCommand);
+
+			bindingSet.Bind(_refreshControl).For(control => control.IsRefreshing).To(vm => vm.IsBusy);
+			bindingSet.Bind(_refreshControl).For(control => control.RefreshCommand).To(vm => vm.RefreshTodoItemsCommand);
+
 			bindingSet.Apply ();
 		}
 
@@ -57,7 +70,6 @@ namespace MVVMCrossDemo.iOS
 			public TableSource(UITableView tableView) : base(tableView, UITableViewCellStyle.Subtitle, _identifier, _bindingText)
 			{
 			}
-
 		}
 	}
 }

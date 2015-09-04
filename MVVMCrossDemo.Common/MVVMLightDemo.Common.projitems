@@ -12,6 +12,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
     <Folder Include="$(MSBuildThisFileDirectory)Constants\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Models\TodoItem.cs" />
@@ -19,5 +20,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Constants\PageConstants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SecondViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IDialog.cs" />
   </ItemGroup>
 </Project>

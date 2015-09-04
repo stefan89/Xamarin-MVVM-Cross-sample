@@ -1,6 +1,9 @@
 using UIKit;
 
+using Cirrious.CrossCore;
+using Cirrious.CrossCore.IoC;
 using Cirrious.CrossCore.Platform;
+
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Touch.Platform;
 
@@ -17,6 +20,8 @@ namespace MVVMCrossDemo.iOS
 
 		protected override IMvxApplication CreateApp()
 		{
+			Mvx.RegisterType<IDialog, Dialog_iOS> (); //Info: https://github.com/MvvmCross/MvvmCross/wiki/Service-Location-and-Inversion-of-Control
+
 			return new App();
 		}
 		

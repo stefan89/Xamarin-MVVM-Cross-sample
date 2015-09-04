@@ -5,6 +5,8 @@ using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
 
 using MVVMCrossDemo.Common;
+using Cirrious.CrossCore.IoC;
+using Cirrious.CrossCore;
 
 namespace MVVMCrossDemo.Droid
 {
@@ -16,6 +18,8 @@ namespace MVVMCrossDemo.Droid
 
         protected override IMvxApplication CreateApp()
         {
+			Mvx.RegisterType<IDialog, Dialog_Droid> (); //Info: https://github.com/MvvmCross/MvvmCross/wiki/Service-Location-and-Inversion-of-Control
+
             return new App();
         }
 		

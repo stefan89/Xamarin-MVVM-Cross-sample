@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using Cirrious.MvvmCross.ViewModels;
 
 using MVVMCrossDemo.Common;
+using Cirrious.CrossCore;
 
 namespace MVVMLightDemo.Common
 {
@@ -30,7 +31,7 @@ namespace MVVMLightDemo.Common
 		{
 			get {
 				return new MvxCommand<TodoItem>(item => {
-					Debug.WriteLine (item.Name + " clicked");
+					Mvx.Resolve<IDialog>().ShowMessage ("Item clicked", item.Name + " clicked");
 				});
 			}
 		}

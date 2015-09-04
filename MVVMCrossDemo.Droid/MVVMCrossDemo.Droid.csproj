@@ -77,6 +77,8 @@
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Views\SplashScreen.cs" />
     <Compile Include="BindableUIControls\BindableSwipeRefreshLayout.cs" />
+    <Compile Include="Implementations\Dialog_Droid.cs" />
+    <Compile Include="AndroidApp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -103,5 +105,6 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="BindableUIControls\" />
+    <Folder Include="Implementations\" />
   </ItemGroup>
 </Project>

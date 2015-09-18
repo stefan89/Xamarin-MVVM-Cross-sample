@@ -1,7 +1,6 @@
 using UIKit;
 
 using Cirrious.CrossCore;
-using Cirrious.CrossCore.IoC;
 using Cirrious.CrossCore.Platform;
 
 using Cirrious.MvvmCross.ViewModels;

@@ -8,7 +8,7 @@ namespace MVVMCrossDemo.Droid
 	[Application(Label = "MVVM Cross Demo")]
     public class AndroidApp : Application
     {
-		static AndroidApp _context;
+		public static Activity CurrentActivity;
 
 		public AndroidApp (IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
@@ -21,13 +21,6 @@ namespace MVVMCrossDemo.Droid
         public override void OnCreate ()
         {
             base.OnCreate();
-
-			_context = this;
         }
-
-		public static AndroidApp GetAppContext()
-		{
-			return _context;
-		}
     }
 }

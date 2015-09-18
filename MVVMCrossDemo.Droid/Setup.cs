@@ -1,12 +1,11 @@
 using Android.Content;
 
+using Cirrious.CrossCore;
 using Cirrious.CrossCore.Platform;
-using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
+using Cirrious.MvvmCross.Droid.Platform;
 
 using MVVMCrossDemo.Common;
-using Cirrious.CrossCore.IoC;
-using Cirrious.CrossCore;
 
 namespace MVVMCrossDemo.Droid
 {

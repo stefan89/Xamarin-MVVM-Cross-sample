@@ -1,6 +1,5 @@
 ﻿using Android.App;
 
-using Cirrious.MvvmCross.Droid.Views;
 using Cirrious.MvvmCross.Binding.BindingContext;
 
 using MVVMLightDemo.Common;
@@ -8,7 +7,7 @@ using MVVMLightDemo.Common;
 namespace MVVMCrossDemo.Droid
 {
 	[Activity(Label = "Todo Items")]
-	public class TodoItemsActivity : MvxActivity
+	public class TodoItemsActivity : BaseMvxActivity
 	{
 		BindableSwipeRefreshLayout _swipeRefreshLayout;
 

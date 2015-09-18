@@ -1,8 +1,10 @@
 ﻿using System;
 
 using MVVMCrossDemo.Common;
+
 using Android.App;
 using Android.Widget;
+using Android.Content;
 
 namespace MVVMCrossDemo.Droid
 {
@@ -14,7 +16,19 @@ namespace MVVMCrossDemo.Droid
 
 		public void ShowMessage (string title, string message)
 		{
-			Toast.MakeText (AndroidApp.GetAppContext (), message, ToastLength.Short).Show ();
+			var currentActivity = AndroidApp.CurrentActivity;
+
+			var alert = new AlertDialog.Builder (currentActivity);
+			alert.SetTitle (title);
+			alert.SetMessage (message);
+			alert.SetPositiveButton ("OK", (senderAlert, args) => {
+			} );
+
+			currentActivity.RunOnUiThread (() => {
+				alert.Show ();
+			});
+
+//			Toast.MakeText (AndroidApp.GetAppContext (), message, ToastLength.Short).Show ();
 		}
 	}
 }

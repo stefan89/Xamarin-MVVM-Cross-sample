@@ -15,7 +15,7 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>MVVMLightDemo.Droid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -79,6 +79,7 @@
     <Compile Include="BindableUIControls\BindableSwipeRefreshLayout.cs" />
     <Compile Include="Implementations\Dialog_Droid.cs" />
     <Compile Include="AndroidApp.cs" />
+    <Compile Include="Views\Base\BaseMvxActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -106,5 +107,6 @@
     <Folder Include="Views\" />
     <Folder Include="BindableUIControls\" />
     <Folder Include="Implementations\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
 </Project>

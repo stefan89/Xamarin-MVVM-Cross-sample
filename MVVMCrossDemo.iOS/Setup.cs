@@ -5,6 +5,7 @@ using Cirrious.CrossCore.Platform;
 
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Touch.Platform;
+using Cirrious.MvvmCross.Touch.Views.Presenters;
 
 using MVVMCrossDemo.Common;
 
@@ -12,8 +13,11 @@ namespace MVVMCrossDemo.iOS
 {
 	public class Setup : MvxTouchSetup
 	{
-		public Setup(MvxApplicationDelegate applicationDelegate, UIWindow window)
-            : base(applicationDelegate, window)
+		public Setup(MvxApplicationDelegate applicationDelegate, UIWindow window) : base(applicationDelegate, window)
+		{
+		}
+
+		public Setup(IMvxApplicationDelegate applicationDelegate, IMvxTouchViewPresenter presenter) : base(applicationDelegate, presenter)
 		{
 		}
 

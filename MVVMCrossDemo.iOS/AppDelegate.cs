@@ -4,6 +4,7 @@ using Foundation;
 using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Touch.Platform;
+using Cirrious.MvvmCross.Touch.Views.Presenters;
 
 namespace MVVMCrossDemo.iOS
 {
@@ -16,7 +17,9 @@ namespace MVVMCrossDemo.iOS
 		{
 			_window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-			var setup = new Setup(this, _window);
+			var presenter = new MvxModalSupportTouchViewPresenter(this, _window);
+			var setup = new Setup (this, presenter);
+			//var setup = new Setup(this, _window);
 			setup.Initialize();
 
 			var startup = Mvx.Resolve<IMvxAppStart>();

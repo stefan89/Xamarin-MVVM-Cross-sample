@@ -113,10 +113,13 @@ namespace MVVMCrossDemo.Droid
 			public const int listview_item_todoitem = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int SplashScreen = 2130903041;
+			public const int SecondActivity = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int TodoItemsActivity = 2130903042;
+			public const int SplashScreen = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int TodoItemsActivity = 2130903043;
 			
 			static Layout()
 			{

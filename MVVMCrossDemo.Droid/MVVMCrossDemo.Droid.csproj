@@ -80,6 +80,7 @@
     <Compile Include="Implementations\Dialog_Droid.cs" />
     <Compile Include="AndroidApp.cs" />
     <Compile Include="Views\Base\BaseMvxActivity.cs" />
+    <Compile Include="Views\ThirdActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -100,6 +101,7 @@
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\layout\listview_item_todoitem.axml" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\layout\SecondActivity.axml" />
   </ItemGroup>
   <Import Project="..\MVVMCrossDemo.Common\MVVMLightDemo.Common.projitems" Label="Shared" Condition="Exists('..\MVVMCrossDemo.Common\MVVMLightDemo.Common.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />

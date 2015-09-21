@@ -93,15 +93,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
-    <InterfaceDefinition Include="Views\TodoItemsViewController~ipad.xib">
-      <DependentUpon>TodoItemsViewController.cs</DependentUpon>
-    </InterfaceDefinition>
-    <InterfaceDefinition Include="Views\TodoItemsViewController~iphone.xib">
-      <DependentUpon>TodoItemsViewController.cs</DependentUpon>
-    </InterfaceDefinition>
-    <InterfaceDefinition Include="Views\SecondViewController.xib">
-      <DependentUpon>SecondViewController.cs</DependentUpon>
-    </InterfaceDefinition>
+    <InterfaceDefinition Include="Views\SecondViewController.xib" />
+    <InterfaceDefinition Include="Views\ThirdViewController.xib" />
+    <InterfaceDefinition Include="Views\TodoItemsViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -124,6 +118,10 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="BindableUIControls\BindableUIRefreshControl.cs" />
     <Compile Include="Implementations\Dialog_iOS.cs" />
+    <Compile Include="Views\ThirdViewController.cs" />
+    <Compile Include="Views\ThirdViewController.designer.cs">
+      <DependentUpon>ThirdViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="..\MVVMCrossDemo.Common\MVVMLightDemo.Common.projitems" Label="Shared" Condition="Exists('..\MVVMCrossDemo.Common\MVVMLightDemo.Common.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

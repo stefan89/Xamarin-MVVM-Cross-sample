@@ -4,17 +4,17 @@ using Cirrious.MvvmCross.ViewModels;
 
 namespace MVVMCrossDemo.Common
 {
-	public class SecondViewModel : MvxViewModel
+	public class ThirdViewModel : MvxViewModel
 	{
-		public ICommand NavigateToThirdPageCommand { 
+		public ICommand ClosePageCommand { 
 			get {
 				return new MvxCommand (() => {
-					ShowViewModel<ThirdViewModel>();
+					Close (this);
 				});
 			}
 		}
 
-		public SecondViewModel ()
+		public ThirdViewModel ()
 		{
 		}
 	}

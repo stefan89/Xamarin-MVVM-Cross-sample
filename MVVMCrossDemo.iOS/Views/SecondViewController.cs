@@ -1,4 +1,5 @@
 ﻿using Cirrious.MvvmCross.Touch.Views;
+using Cirrious.MvvmCross.Binding.BindingContext;
 
 using MVVMCrossDemo.Common;
 
@@ -24,6 +25,10 @@ namespace MVVMCrossDemo.iOS
 			base.ViewDidLoad ();
 
 			this.Title = "Second Page";
+
+			var bindingSet = this.CreateBindingSet<SecondViewController, SecondViewModel> ();
+			bindingSet.Bind (buttonNavigateToThirdPage).To (vm => vm.NavigateToThirdPageCommand);
+			bindingSet.Apply ();
 		}
 	}
 }

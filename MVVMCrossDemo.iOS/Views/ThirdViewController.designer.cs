@@ -9,17 +9,17 @@ using System.CodeDom.Compiler;
 
 namespace MVVMCrossDemo.iOS
 {
-	[Register ("SecondViewController")]
-	partial class SecondViewController
+	[Register ("ThirdViewController")]
+	partial class ThirdViewController
 	{
 		[Outlet]
-		UIKit.UIButton buttonNavigateToThirdPage { get; set; }
+		UIKit.UIButton buttonClosePage { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (buttonNavigateToThirdPage != null) {
-				buttonNavigateToThirdPage.Dispose ();
-				buttonNavigateToThirdPage = null;
+			if (buttonClosePage != null) {
+				buttonClosePage.Dispose ();
+				buttonClosePage = null;
 			}
 		}
 	}

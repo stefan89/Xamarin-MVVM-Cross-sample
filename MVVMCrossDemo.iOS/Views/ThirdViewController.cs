@@ -18,13 +18,12 @@ namespace MVVMCrossDemo.iOS
 
 		public ThirdViewController () : base ("ThirdViewController", null)
 		{
+			Title = "Third Page";
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			
-			this.Title = "Third Page";
 
 			var bindingSet = this.CreateBindingSet<ThirdViewController, ThirdViewModel> ();
 			bindingSet.Bind (buttonClosePage).To (vm => vm.ClosePageCommand);

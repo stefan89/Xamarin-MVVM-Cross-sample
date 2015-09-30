@@ -1,11 +1,10 @@
-﻿using System.Diagnostics;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using System.Collections.ObjectModel;
 
+using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
 
 using MVVMCrossDemo.Common;
-using Cirrious.CrossCore;
 
 namespace MVVMLightDemo.Common
 {

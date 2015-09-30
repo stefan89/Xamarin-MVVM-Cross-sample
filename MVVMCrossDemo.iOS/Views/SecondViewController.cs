@@ -18,13 +18,12 @@ namespace MVVMCrossDemo.iOS
 
 		public SecondViewController () : base ("SecondViewController", null)
 		{
+			Title = "Second Page";
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-
-			this.Title = "Second Page";
 
 			var bindingSet = this.CreateBindingSet<SecondViewController, SecondViewModel> ();
 			bindingSet.Bind (buttonNavigateToThirdPage).To (vm => vm.NavigateToThirdPageCommand);

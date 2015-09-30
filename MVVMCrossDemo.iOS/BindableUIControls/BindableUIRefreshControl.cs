@@ -7,17 +7,7 @@ namespace MVVMCrossDemo.iOS
 {
 	public class BindableUIRefreshControl : UIRefreshControl
 	{
-		public BindableUIRefreshControl()
-		{
-			this.ValueChanged += (object sender, EventArgs e) => 
-			{
-				var command = RefreshCommand;
-				if(command  == null)
-					return;
-
-				command.Execute(null);
-			};
-		}
+		public ICommand RefreshCommand { get; set;}
 
 		bool _isRefreshing;
 		public bool IsRefreshing
@@ -33,6 +23,16 @@ namespace MVVMCrossDemo.iOS
 			}
 		}
 
-		public ICommand RefreshCommand { get; set;}
+		public BindableUIRefreshControl()
+		{
+			this.ValueChanged += (object sender, EventArgs e) => 
+			{
+				var command = RefreshCommand;
+				if(command  == null)
+					return;
+
+				command.Execute(null);
+			};
+		}
 	}
 }

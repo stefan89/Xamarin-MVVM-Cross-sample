@@ -26,13 +26,12 @@ namespace MVVMCrossDemo.iOS
 
 		public TodoItemsViewController () : base ("TodoItemsViewController", null)
 		{
+			Title = "Todo items";
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-
-			Title = "Todo items";
 
 			_refreshControl = new BindableUIRefreshControl();
 			_refreshControl.AttributedTitle = new NSAttributedString ("Refreshing", new UIStringAttributes ());
@@ -51,7 +50,6 @@ namespace MVVMCrossDemo.iOS
 			var bindingSet = this.CreateBindingSet<TodoItemsViewController, TodoItemsViewModel> ();
 
 			bindingSet.Bind (buttonAddItem).To (vm => vm.AddNewTodoCommand);
-
 			bindingSet.Bind (buttonNavigateToSecondPage).To (vm => vm.NavigateToSecondPageCommand);
 
 			bindingSet.Bind(source).For(vm => vm.SelectionChangedCommand).To(vm => vm.SelectTodoItemCommand);

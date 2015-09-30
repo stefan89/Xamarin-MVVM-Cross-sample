@@ -12,6 +12,17 @@ namespace MVVMCrossDemo.Droid
 	{
 		public ICommand RefreshCommand { get; set;}
 
+		bool _isRefreshing;
+		public bool IsRefreshing
+		{
+			get { return _isRefreshing;}
+			set
+			{ 
+				_isRefreshing = value; 
+				Refreshing = _isRefreshing;
+			}
+		}
+
 		public BindableSwipeRefreshLayout(Context context, IAttributeSet attrs) : base(context, attrs)
 		{
 			Init ();
@@ -32,17 +43,6 @@ namespace MVVMCrossDemo.Droid
 
 				command.Execute (null);
 			};
-		}
-
-		bool _isRefreshing;
-		public bool IsRefreshing
-		{
-			get { return _isRefreshing;}
-			set
-			{ 
-				_isRefreshing = value; 
-				Refreshing = _isRefreshing;
-			}
 		}
 	}
 }

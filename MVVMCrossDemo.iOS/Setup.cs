@@ -1,23 +1,22 @@
 using UIKit;
 
-using Cirrious.CrossCore;
-using Cirrious.CrossCore.Platform;
-
-using Cirrious.MvvmCross.ViewModels;
-using Cirrious.MvvmCross.Touch.Platform;
-using Cirrious.MvvmCross.Touch.Views.Presenters;
+using MvvmCross.Platform;
+using MvvmCross.iOS.Platform;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform.Platform;
+using MvvmCross.iOS.Views.Presenters;
 
 using MVVMCrossDemo.Common;
 
 namespace MVVMCrossDemo.iOS
 {
-	public class Setup : MvxTouchSetup
+	public class Setup : MvxIosSetup
 	{
 		public Setup(MvxApplicationDelegate applicationDelegate, UIWindow window) : base(applicationDelegate, window)
 		{
 		}
 
-		public Setup(IMvxApplicationDelegate applicationDelegate, IMvxTouchViewPresenter presenter) : base(applicationDelegate, presenter)
+		public Setup(IMvxApplicationDelegate applicationDelegate, IMvxIosViewPresenter presenter) : base(applicationDelegate, presenter)
 		{
 		}
 

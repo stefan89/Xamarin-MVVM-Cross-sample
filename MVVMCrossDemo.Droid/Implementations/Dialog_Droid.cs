@@ -1,10 +1,6 @@
-﻿using System;
-
-using MVVMCrossDemo.Common;
+﻿using MVVMCrossDemo.Common;
 
 using Android.App;
-using Android.Widget;
-using Android.Content;
 
 namespace MVVMCrossDemo.Droid
 {
@@ -28,7 +24,7 @@ namespace MVVMCrossDemo.Droid
 				alert.Show ();
 			});
 
-//			Toast.MakeText (AndroidApp.GetAppContext (), message, ToastLength.Short).Show ();
+			//Toast.MakeText (AndroidApp.GetAppContext (), message, ToastLength.Short).Show ();
 		}
 	}
 }

@@ -1,11 +1,11 @@
-﻿using Cirrious.MvvmCross.Touch.Views;
-using Cirrious.MvvmCross.Binding.BindingContext;
+﻿using MvvmCross.iOS.Views;
+using MvvmCross.Binding.BindingContext;
 
 using MVVMCrossDemo.Common;
 
 namespace MVVMCrossDemo.iOS
 {
-	public partial class ThirdViewController : MvxViewController, IMvxModalTouchView
+	public partial class ThirdViewController : MvxViewController, IMvxModalIosView
 	{
 		public new ThirdViewModel ViewModel {
 			get { 

@@ -1,9 +1,9 @@
 using Android.Content;
 
-using Cirrious.CrossCore;
-using Cirrious.CrossCore.Platform;
-using Cirrious.MvvmCross.ViewModels;
-using Cirrious.MvvmCross.Droid.Platform;
+using MvvmCross.Platform;
+using MvvmCross.Droid.Platform;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform.Platform;
 
 using MVVMCrossDemo.Common;
 
@@ -24,7 +24,7 @@ namespace MVVMCrossDemo.Droid
 		
         protected override IMvxTrace CreateDebugTrace()
         {
-            return new DebugTrace();
+			return new DebugTrace();
         }
     }
 }

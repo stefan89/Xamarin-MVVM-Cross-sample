@@ -3,9 +3,9 @@
 using UIKit;
 using Foundation;
 
-using Cirrious.MvvmCross.Touch.Views;
-using Cirrious.MvvmCross.Binding.Touch.Views;
-using Cirrious.MvvmCross.Binding.BindingContext;
+using MvvmCross.iOS.Views;
+using MvvmCross.Binding.iOS.Views;
+using MvvmCross.Binding.BindingContext;
 
 using MVVMLightDemo.Common;
 

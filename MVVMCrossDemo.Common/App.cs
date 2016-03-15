@@ -1,4 +1,4 @@
-﻿using Cirrious.MvvmCross.ViewModels;
+﻿using MvvmCross.Core.ViewModels;
 
 using MVVMLightDemo.Common;
 
@@ -12,5 +12,7 @@ namespace MVVMCrossDemo.Common
 		}
 	}
 }
-//Tutorials: https://mvvmcross.wordpress.com
-//Documentation: https://github.com/MvvmCross/MvvmCross
+//Documentation: 
+//https://github.com/MvvmCross
+//https://mvvmcross.readme.io/docs/
+//https://mvvmcross.wordpress.com

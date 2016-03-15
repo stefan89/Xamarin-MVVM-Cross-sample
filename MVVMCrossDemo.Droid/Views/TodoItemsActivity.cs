@@ -1,6 +1,6 @@
 ﻿using Android.App;
 
-using Cirrious.MvvmCross.Binding.BindingContext;
+using MvvmCross.Binding.BindingContext;
 
 using MVVMLightDemo.Common;
 

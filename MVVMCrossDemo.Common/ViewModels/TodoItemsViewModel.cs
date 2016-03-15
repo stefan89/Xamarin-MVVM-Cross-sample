@@ -1,8 +1,8 @@
 ﻿using System.Windows.Input;
 using System.Collections.ObjectModel;
 
-using Cirrious.CrossCore;
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Platform;
+using MvvmCross.Core.ViewModels;
 
 using MVVMCrossDemo.Common;
 

@@ -1,5 +1,5 @@
-﻿using Cirrious.MvvmCross.Touch.Views;
-using Cirrious.MvvmCross.Binding.BindingContext;
+﻿using MvvmCross.iOS.Views;
+using MvvmCross.Binding.BindingContext;
 
 using MVVMCrossDemo.Common;
 

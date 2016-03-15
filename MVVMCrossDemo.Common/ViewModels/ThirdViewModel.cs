@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Core.ViewModels;
 
 namespace MVVMCrossDemo.Common
 {

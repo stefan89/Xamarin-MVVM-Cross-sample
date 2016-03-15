@@ -1,9 +1,9 @@
 using System;
 using System.Diagnostics;
 
-using Cirrious.CrossCore.Platform;
+using MvvmCross.Platform.Platform;
 
-namespace MVVMCrossDemo.iOS
+namespace MVVMCrossDemo.Common
 {
     public class DebugTrace : IMvxTrace
     {

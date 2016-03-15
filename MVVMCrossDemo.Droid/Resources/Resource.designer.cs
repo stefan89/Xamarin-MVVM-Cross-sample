@@ -26,19 +26,40 @@ namespace MVVMCrossDemo.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::MVVMCrossDemo.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::MVVMCrossDemo.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::MVVMCrossDemo.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxItemTemplate = global::MVVMCrossDemo.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxLang = global::MVVMCrossDemo.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxSource = global::MVVMCrossDemo.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxTemplate = global::MVVMCrossDemo.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Id.MvvmCrossTagId = global::MVVMCrossDemo.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Binding.Droid.Resource.Id.MvxBindingTagUnique = global::MVVMCrossDemo.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxBind = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxLang = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView_MvxSource = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::MVVMCrossDemo.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 		}
 		
 		public partial class Attribute
 		{
-			
-			// aapt resource value: 0x7f010005
-			public const int GroupItemTemplate = 2130771973;
 			
 			// aapt resource value: 0x7f010000
 			public const int MvxBind = 2130771968;
 			
 			// aapt resource value: 0x7f010004
 			public const int MvxDropDownItemTemplate = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public const int MvxGroupItemTemplate = 2130771973;
 			
 			// aapt resource value: 0x7f010003
 			public const int MvxItemTemplate = 2130771971;
@@ -85,16 +106,19 @@ namespace MVVMCrossDemo.Droid
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int MvxBindingTagUnique = 2130968576;
-			
-			// aapt resource value: 0x7f040002
-			public const int buttonAddItem = 2130968578;
-			
-			// aapt resource value: 0x7f040003
-			public const int buttonNavigateToSecondPage = 2130968579;
+			public const int MvvmCrossTagId = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int refresher = 2130968577;
+			public const int MvxBindingTagUnique = 2130968577;
+			
+			// aapt resource value: 0x7f040003
+			public const int buttonAddItem = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int buttonNavigateToSecondPage = 2130968580;
+			
+			// aapt resource value: 0x7f040002
+			public const int refresher = 2130968578;
 			
 			static Id()
 			{
@@ -192,7 +216,7 @@ namespace MVVMCrossDemo.Droid
 					2130771973};
 			
 			// aapt resource value: 0
-			public const int MvxExpandableListView_GroupItemTemplate = 0;
+			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxImageView = new int[]
 			{

@@ -2,7 +2,7 @@
 
 using MvvmCross.Binding.BindingContext;
 
-using MVVMLightDemo.Common;
+using MVVMCrossDemo.Common;
 
 namespace MVVMCrossDemo.Droid
 {

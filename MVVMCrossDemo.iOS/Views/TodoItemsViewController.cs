@@ -7,22 +7,13 @@ using MvvmCross.iOS.Views;
 using MvvmCross.Binding.iOS.Views;
 using MvvmCross.Binding.BindingContext;
 
-using MVVMLightDemo.Common;
+using MVVMCrossDemo.Common;
 
 namespace MVVMCrossDemo.iOS
 {
-	public partial class TodoItemsViewController : MvxViewController
+	public partial class TodoItemsViewController : MvxViewController<TodoItemsViewModel>
 	{
 		BindableUIRefreshControl _refreshControl;
-
-		public new TodoItemsViewModel ViewModel {
-			get { 
-				return base.ViewModel as TodoItemsViewModel; 
-			}
-			set { 
-				base.ViewModel = value; 
-			}
-		}
 
 		public TodoItemsViewController () : base ("TodoItemsViewController", null)
 		{

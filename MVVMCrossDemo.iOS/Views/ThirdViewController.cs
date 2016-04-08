@@ -5,17 +5,8 @@ using MVVMCrossDemo.Common;
 
 namespace MVVMCrossDemo.iOS
 {
-	public partial class ThirdViewController : MvxViewController, IMvxModalIosView
+	public partial class ThirdViewController : MvxViewController<ThirdViewModel>, IMvxModalIosView
 	{
-		public new ThirdViewModel ViewModel {
-			get { 
-				return base.ViewModel as ThirdViewModel; 
-			}
-			set { 
-				base.ViewModel = value; 
-			}
-		}
-
 		public ThirdViewController () : base ("ThirdViewController", null)
 		{
 			Title = "Third Page";

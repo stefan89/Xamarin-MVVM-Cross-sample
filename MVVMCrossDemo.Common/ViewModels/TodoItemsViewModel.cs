@@ -6,7 +6,7 @@ using MvvmCross.Core.ViewModels;
 
 using MVVMCrossDemo.Common;
 
-namespace MVVMLightDemo.Common
+namespace MVVMCrossDemo.Common
 {
 	public class TodoItemsViewModel : MvxViewModel
 	{

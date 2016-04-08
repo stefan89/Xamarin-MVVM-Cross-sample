@@ -5,17 +5,8 @@ using MVVMCrossDemo.Common;
 
 namespace MVVMCrossDemo.iOS
 {
-	public partial class SecondViewController : MvxViewController
+	public partial class SecondViewController : MvxViewController<SecondViewModel>
 	{
-		public new SecondViewModel ViewModel {
-			get { 
-				return base.ViewModel as SecondViewModel; 
-			}
-			set { 
-				base.ViewModel = value; 
-			}
-		}
-
 		public SecondViewController () : base ("SecondViewController", null)
 		{
 			Title = "Second Page";

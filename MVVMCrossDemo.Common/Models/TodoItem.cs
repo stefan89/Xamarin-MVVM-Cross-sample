@@ -1,4 +1,4 @@
-﻿namespace MVVMLightDemo.Common
+﻿namespace MVVMCrossDemo.Common
 {
 	public class TodoItem
 	{

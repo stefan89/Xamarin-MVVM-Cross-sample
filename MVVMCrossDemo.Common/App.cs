@@ -1,7 +1,5 @@
 ﻿using MvvmCross.Core.ViewModels;
 
-using MVVMLightDemo.Common;
-
 namespace MVVMCrossDemo.Common
 {
 	public class App : MvxApplication
@@ -13,6 +11,7 @@ namespace MVVMCrossDemo.Common
 	}
 }
 //Documentation: 
+//http://mvvmcross.com/
 //https://github.com/MvvmCross
 //https://mvvmcross.readme.io/docs/
 //https://mvvmcross.wordpress.com

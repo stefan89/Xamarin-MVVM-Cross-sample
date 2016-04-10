@@ -1,4 +1,6 @@
-﻿using MvvmCross.Droid.Views;
+﻿using System;
+
+using MvvmCross.Droid.Views;
 
 namespace MVVMCrossDemo.Droid
 {
@@ -13,6 +15,13 @@ namespace MVVMCrossDemo.Droid
 			base.OnResume ();
 
 			AndroidApp.CurrentActivity = this;
+		}
+
+		protected override void OnDestroy ()
+		{
+			base.OnDestroy ();
+
+			GC.Collect ();
 		}
 	}
 }
